@@ -5,15 +5,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.skilldistillery.mvcfilmsite.entities.Actor;
 import com.skilldistillery.mvcfilmsite.entities.Film;
 
-
-
-public class FilmDaoJdbcImpl implements FilmDAO  {
+public class FilmDaoJdbcImpl implements FilmDAO {
 	private static final String URL = "jdbc:mysql://localhost:3306/sdvid?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=US/Mountain";
 	private String user = "student";
 	private String pass = "student";
@@ -76,7 +75,6 @@ public class FilmDaoJdbcImpl implements FilmDAO  {
 		}
 		return null;
 	}
-
 
 	@Override
 	public String findLanguageByLanguageId(int langId) {
@@ -197,7 +195,7 @@ public class FilmDaoJdbcImpl implements FilmDAO  {
 			stmt.setString(1, "%" + string + "%");
 			stmt.setString(2, "%" + string + "%");
 			rs = stmt.executeQuery();
-			
+
 			while (rs.next()) {
 				filmList.add(new Film(rs.getInt("id"), rs.getString("title"), rs.getString("description"),
 						rs.getInt("release_year"), rs.getInt("language_id"), rs.getInt("rental_duration"),
@@ -234,14 +232,13 @@ public class FilmDaoJdbcImpl implements FilmDAO  {
 			stmt = conn.prepareStatement(sqltext);
 			stmt.setInt(1, filmId);
 			rs = stmt.executeQuery();
-			
-			if(rs.next()) {
-				category= rs.getString("name");
-			}else {
+
+			if (rs.next()) {
+				category = rs.getString("name");
+			} else {
 				category = "idk";
 			}
-			
-			
+
 			return category;
 
 		} catch (SQLException e) {
@@ -262,5 +259,48 @@ public class FilmDaoJdbcImpl implements FilmDAO  {
 			}
 		}
 		return category;
+	}
+
+	@Override
+	public Film addFilm(Film film) {
+		try {
+			Connection conn = DriverManager.getConnection(URL, user, pass);
+			String sql = "INSERT INTO film " + " (title, description, release_year, rating, length, language_id) "
+			// TODO: Add the rest of the film properties
+					+ "VALUES (?, ?, ?, ?, ?, ?)";
+			PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			stmt.setString(1, film.getTitle());
+			stmt.setString(2, film.getDescription());
+			stmt.setInt(3, film.getReleaseYear());
+			stmt.setString(4, film.getRating());
+			stmt.setInt(5, film.getLength());
+			stmt.setInt(6, film.getLanguageId());
+
+			conn.setAutoCommit(false);
+			int updateCount = stmt.executeUpdate();
+
+			if (updateCount != 1) {
+				System.out.println("Boooooo, something went el wrongo!");
+				conn.rollback();
+			} else {
+				// 5) display result(s)
+				ResultSet keys = stmt.getGeneratedKeys();
+				if (keys.next()) {
+					film.setId(keys.getInt(1));
+					System.out.println("Id: " + keys.getInt(1));
+					keys.close();
+				}
+			}
+			// 6) done! Huzzah!
+			conn.commit();
+
+			stmt.close();
+			conn.close();
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+			film = null;
+		}
+
+		return film;
 	}
 }

@@ -10,16 +10,10 @@
 <h1>Film Site</h1>
 
 <a href = "findFilmById.html"> Get film form Id</a>
+<br>
+<a href = "addFilm.html"> Add a film</a>
 
 
-
-
-
-
-<!-- <form action="GetNumbers.do" method="GET">
-		<input type="text" name="howmany" value="6" size="2" /> 
-		<input type="submit" value="Get Numbers" />
-	</form> -->
 
 
 

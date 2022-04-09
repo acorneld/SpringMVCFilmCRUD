@@ -22,29 +22,15 @@
 					<li>${film.title}</li>
 					<li>${film.description}</li>
 					<li>${film.rating}</li>
-					<li>${film.actorList}</li>
 					<li>${film.category}</li> 
 					<li>${film.language}</li>
 				</ul>
 			</c:when>
 			<c:otherwise>
-				<p>No film found</p>
+				<p>Could not add your film</p>
 			</c:otherwise>
 		</c:choose>
 
 	</div>
 </body>
 </html>
-
-
-<!-- private int releaseYear;
-	private int languageId;
-	private int rentalDuration;
-	private double rentalRate;
-	private int length;
-	private double replacementCost;
-	private String rating;
-	private String specialFeatures;
-	private List<Actor> actorList;
-	private String language;
-	private String category; -->

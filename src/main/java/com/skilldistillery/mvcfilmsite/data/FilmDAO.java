@@ -14,5 +14,7 @@ public interface FilmDAO {
 	public List<Film> findFilmsByKeyword(String string);
 
 	public String findLanguageByLanguageId(int langId);
+	
+	public Film addFilm(Film f);
 }
 

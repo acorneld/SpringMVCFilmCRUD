@@ -32,6 +32,26 @@ public class FilmController {
 
 		return MV;
 	}
+	
+	@RequestMapping(path = "addFilm.do", method = RequestMethod.POST)
+	public ModelAndView addFilm(@RequestParam("title")String title, @RequestParam("desc")String desc, @RequestParam("releaseYear")int releaseYear, @RequestParam("rating")String rating, @RequestParam("length")int length) {
+		ModelAndView MV = new ModelAndView();
+		Film F = new Film();
+		F.setTitle(title);
+		F.setDescription(desc);
+		F.setReleaseYear(releaseYear);
+		F.setRating(rating);
+		F.setLength(length);
+		F.setLanguage("english");
+		F.setCategory("Romantic Comedy");
+		F.setLanguageId(1);
+		
+		Film X = filmDAO.addFilm(F);
+		MV.addObject("film", X);
+		MV.setViewName("WEB-INF/filmAdded.jsp");
+
+		return MV;
+	}
 
 //	@RequestMapping(path="GetStateData.do",params="name", method= RequestMethod.GET)
 //	public ModelAndView getByStateName(@RequestParam("name")String name) {

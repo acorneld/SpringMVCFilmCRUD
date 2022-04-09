@@ -18,6 +18,63 @@ public class Film {
 	private List<Actor> actorList;
 	private String language;
 	private String category;
+	
+	public int getReleaseYear() {
+		return releaseYear;
+	}
+
+	public void setReleaseYear(int releaseYear) {
+		this.releaseYear = releaseYear;
+	}
+
+	public int getLanguageId() {
+		return languageId;
+	}
+
+	public void setLanguageId(int languageId) {
+		this.languageId = languageId;
+	}
+
+	public int getRentalDuration() {
+		return rentalDuration;
+	}
+
+	public void setRentalDuration(int rentalDuration) {
+		this.rentalDuration = rentalDuration;
+	}
+
+	public double getRentalRate() {
+		return rentalRate;
+	}
+
+	public void setRentalRate(double rentalRate) {
+		this.rentalRate = rentalRate;
+	}
+
+	public double getReplacementCost() {
+		return replacementCost;
+	}
+
+	public void setReplacementCost(double replacementCost) {
+		this.replacementCost = replacementCost;
+	}
+
+	public String getSpecialFeatures() {
+		return specialFeatures;
+	}
+
+	public void setSpecialFeatures(String specialFeatures) {
+		this.specialFeatures = specialFeatures;
+	}
+
+	public void setActorList(List<Actor> actorList) {
+		this.actorList = actorList;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
 
 	public String getCategory() {
 		return category;
@@ -133,38 +190,7 @@ public class Film {
 		this.description = description;
 	}
 
-	public int getRelease_year() {
-		return releaseYear;
-	}
-
-	public void setRelease_year(int release_year) {
-		this.releaseYear = release_year;
-	}
-
-	public int getLanguage_id() {
-		return languageId;
-	}
-
-	public void setLanguage_id(int language_id) {
-		this.languageId = language_id;
-	}
-
-	public int getRental_duration() {
-		return rentalDuration;
-	}
-
-	public void setRental_duration(int rental_duration) {
-		this.rentalDuration = rental_duration;
-	}
-
-	public double getRental_rate() {
-		return rentalRate;
-	}
-
-	public void setRental_rate(double rental_rate) {
-		this.rentalRate = rental_rate;
-	}
-
+	
 	public int getLength() {
 		return length;
 	}
@@ -173,28 +199,13 @@ public class Film {
 		this.length = length;
 	}
 
-	public double getReplacment_cost() {
-		return replacementCost;
-	}
-
-	public void setReplacment_cost(double replacment_cost) {
-		this.replacementCost = replacment_cost;
-	}
-
+	
 	public String getRating() {
 		return rating;
 	}
 
 	public void setRating(String rating) {
 		this.rating = rating;
-	}
-
-	public String getSpecical_features() {
-		return specialFeatures;
-	}
-
-	public void setSpecical_features(String specical_features) {
-		this.specialFeatures = specical_features;
 	}
 
 }
