@@ -62,6 +62,23 @@ public class FilmController {
 
 		return MV;
 	}
+	
+	@RequestMapping(path = "updateFilm.do", method = RequestMethod.POST)
+	public ModelAndView updateFilm(@RequestParam("id")int filmId) {
+		ModelAndView MV = new ModelAndView();
+		Film F = filmDAO.findFilmById(filmId);
+		MV.addObject(F);
+		MV.setViewName("WEB-INF/updateFilm.jsp");
+		return MV;
+	}
+	
+	@RequestMapping(path = "updateFilmById.do", method = RequestMethod.POST)
+	public ModelAndView updateFilmById(Film film) {
+		ModelAndView MV = new ModelAndView();
+		boolean updated = filmDAO.updateFilm(film);
+		MV.setViewName("WEB-INF/home.jsp");
+		return MV;
+	}
 
 //	@RequestMapping(path="GetStateData.do",params="name", method= RequestMethod.GET)
 //	public ModelAndView getByStateName(@RequestParam("name")String name) {

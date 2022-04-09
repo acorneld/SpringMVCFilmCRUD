@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="updateFilmById.do" method="POST">
+	
+	<label>Enter Film properties:</label> <br>
+	
+	<label>Title</label>
+	<input type="text" name="title">
+	
+	<label>Description</label>
+	<input type="text" name="desc">
+	
+	<label>Release Year</label>
+	<input type="text" name="releaseYear">
+	
+	<label>Rating (PG,G,PG13, R, NC17):</label>
+	<select name="rating" >
+		<option value="PG">PG</option>
+		<option value="PG13">PG13</option>
+		<option value="G">G</option>
+		<option value="NC17">NC17</option>
+	</select>
+	
+	
+	<label>Length</label>
+	<input type="text" name="length">
+	
+	<label>language Id:</label>
+	<input type="text" name="languageId">
+	
+	<label>Rental Duration:</label>
+	<input type="text" name="rentalDuration">
+	
+	<label>Rental Rate:</label>
+	<input type="text" name="rentalRate">
+	
+	<label>Replacement Cost:</label>
+	<input type="text" name="replacementCost">
+	
+	<label>Special Features:</label>
+	<input type="text" name="specialFeatures">
+	
+	<label>Language:</label>
+	<input type="text" name="language">
+	
+	<label>Category:</label>
+	<input type="text" name="category">
+	
+	<input type="submit" value="Submit">
+	
+	
+	</form>
+</body>
+</html>
+
+
+<!-- private int id;
+	private String title;*
+	private String description;*
+	private int releaseYear;*
+	private int languageId;*
+	private int rentalDuration;*
+	private double rentalRate;*
+	private int length;*
+	private double replacementCost;*
+	private String rating;*
+	private String specialFeatures;*
+	private List<Actor> actorList;
+	private String language;*
+	private String category; -->

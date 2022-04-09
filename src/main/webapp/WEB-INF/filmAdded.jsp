@@ -30,6 +30,12 @@
 				<input type="hidden" value ="${film.id}" name="id"> 
 				<input type="submit"  value="Delete Film!">
 				</form>
+				
+				<form action="updateFilm.do" method="POST">	
+				<input type="hidden" value ="${film.id}" name="id"> 
+				<input type="submit"  value="Update Film!">
+				</form>
+				
 			</c:when>
 			<c:otherwise>
 				<p>Could not add your film</p>
