@@ -19,6 +19,7 @@
 		<c:choose>
 			<c:when test="${! empty film}">
 				<ul>
+					<li>${film.id}</li> 
 					<li>${film.title}</li>
 					<li>${film.description}</li>
 					<li>${film.rating}</li>
@@ -26,6 +27,13 @@
 					<li>${film.category}</li> 
 					<li>${film.language}</li>
 				</ul>
+				
+				<br>
+				<form action="deleteFilm.do" method="POST">	
+				<input type="hidden" value ="${film.id}" name="id"> 
+				<input type="submit"  value="Delete Film!">
+				</form>
+				
 			</c:when>
 			<c:otherwise>
 				<p>No film found</p>
@@ -35,16 +43,3 @@
 	</div>
 </body>
 </html>
-
-
-<!-- private int releaseYear;
-	private int languageId;
-	private int rentalDuration;
-	private double rentalRate;
-	private int length;
-	private double replacementCost;
-	private String rating;
-	private String specialFeatures;
-	private List<Actor> actorList;
-	private String language;
-	private String category; -->

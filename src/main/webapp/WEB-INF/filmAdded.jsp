@@ -19,12 +19,17 @@
 		<c:choose>
 			<c:when test="${! empty film}">
 				<ul>
+					<li>${film.id}</li>
 					<li>${film.title}</li>
 					<li>${film.description}</li>
 					<li>${film.rating}</li>
 					<li>${film.category}</li> 
 					<li>${film.language}</li>
 				</ul>
+				<form action="deleteFilm.do" method="POST">	
+				<input type="hidden" value ="${film.id}" name="id"> 
+				<input type="submit"  value="Delete Film!">
+				</form>
 			</c:when>
 			<c:otherwise>
 				<p>Could not add your film</p>

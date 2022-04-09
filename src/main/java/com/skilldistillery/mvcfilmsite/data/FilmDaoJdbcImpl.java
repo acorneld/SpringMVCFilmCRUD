@@ -42,7 +42,6 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			stmt.setInt(1, filmId);
 			rs = stmt.executeQuery();
 
-//Film(int id, String title, String description, int release_year, int language_id, int rental_duration, double rental_rate, int length, double replacment_cost, String rating, String specical_features)
 			int lang = 0;
 			Film newFilm = null;
 			if (rs.next()) {
@@ -302,5 +301,38 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 		}
 
 		return film;
+	}
+	
+	public boolean deleteFilm(Film f) {
+		Connection conn = null;
+		try {
+			conn = DriverManager.getConnection(URL, user, pass);
+			conn.setAutoCommit(false); // START TRANSACTION
+			String sql = "DELETE FROM film WHERE id = ?";
+			
+			PreparedStatement stmt = conn.prepareStatement(sql);
+			stmt.setInt(1, f.getId());
+			int updateCount = stmt.executeUpdate();
+			
+			if(updateCount != 1) {
+				System.out.println("Somthing went big wrong!");
+				conn.rollback();
+			}else {
+				System.out.println("Delete Successful!");
+			}
+			
+			conn.commit(); // COMMIT TRANSACTION
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+			if (conn != null) {
+				try {
+					conn.rollback();
+				} catch (SQLException sqle2) {
+					System.err.println("Error trying to rollback");
+				}
+			}
+			return false;
+		}
+		return true;
 	}
 }

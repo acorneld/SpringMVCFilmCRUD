@@ -52,6 +52,16 @@ public class FilmController {
 
 		return MV;
 	}
+	
+	@RequestMapping(path = "deleteFilm.do", method = RequestMethod.POST)
+	public ModelAndView deleteFilmById(@RequestParam("id")int filmId) {
+		ModelAndView MV = new ModelAndView();
+		Film F = filmDAO.findFilmById(filmId);
+		boolean deleted = filmDAO.deleteFilm(F);
+		MV.setViewName("WEB-INF/home.jsp");
+
+		return MV;
+	}
 
 //	@RequestMapping(path="GetStateData.do",params="name", method= RequestMethod.GET)
 //	public ModelAndView getByStateName(@RequestParam("name")String name) {
