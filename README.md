@@ -73,12 +73,14 @@
 
 ## Contact
 
-Developers on Project -
+<strong>Developers on Project</strong>
+<ul>
+<li>[LinkedIn](http://www.linkedin.com/in/anthony-tyler-butler)</li>
+<li>anthonybutler0824@gmail.com</li>
+<li>Github - anthonybutler0824</li>
+</ul>
 
-[Anthony Butler](http://www.linkedin.com/in/anthony-tyler-butler) - anthonybutler0824@gmail.com
-Github - anthonybutler0824
-
-[Cecelia Guerrero](https://www.linkedin.com/in/cecelia-guerrero/) -
+[Cecelia Guerrero - LinkedIn](https://www.linkedin.com/in/cecelia-guerrero/) -
 Github - cagugu
 guerrero.a.cecelia@gmail.com
 
