@@ -37,6 +37,8 @@
 <li><strong><em>C</em></strong>reate<li>
 <br>
 Create a new Film in the database with the "Add A Film" Button
+<br>
+![](https://imgur.com/CUPbFum)
 <li><strong><em>R</em></strong>ead</li>
 <br>
 <li><strong><em>U</em></strong>pdate</li>
