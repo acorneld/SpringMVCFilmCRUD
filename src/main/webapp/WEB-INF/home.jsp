@@ -22,21 +22,21 @@
 <div class="container">
 
 
-	<h1 class="text-center">Film Site</h1>
+	<h1 class="text-center">SD Film Database</h1>
 	<div class="container-sm">
-	<button class="btn btn-primary" onclick="document.location='findFilmById.html'">Get film form Id</button>
+	<button class="btn btn-primary" onclick="document.location='findFilmById.html'">Find Film By Id</button>
 	<!-- <a href="findFilmById.html"> Get film form Id</a> -->
 	</div>
 	<br>
 	
 	<div class="container-sm">
-	<button class="btn btn-primary" onclick="document.location='addFilm.html'">Add a film</button>
+	<button class="btn btn-primary" onclick="document.location='addFilm.html'">Add A Film</button>
 	<!-- <a href="addFilm.html"> Add a film</a> -->
 	</div>
 	<br>
 	
 	<div class="container-sm">
-	<button class="btn btn-primary" onclick="document.location='findFilmByKeyword.html'">Find film by keyword/pattern</button>
+	<button class="btn btn-primary" onclick="document.location='findFilmByKeyword.html'">Find Film by Keyword/Pattern</button>
 	<!-- <a href="findFilmByKeyword.html"> Find film by keyword/pattern</a> -->
 	</div>
 	<br>

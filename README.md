@@ -32,15 +32,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p>SpringMVCFilmCRUD is a Dynamic Web Application that allows the user to perform the following operations on a MYSQL Film Database.</p>
-
-<strong>C</strong>reate
+<p>SpringMVCFilmCRUD is a Dynamic Web Application that allows the user to perform the following operations on a Film in the SD MYSQL Film Database.</p>
+<ol>
+<li><strong><em>C</em></strong>reate<li>
 <br>
-<strong>R</strong>ead
+Create a new Film in the database with the "Add A Film" Button
+<li><strong><em>R</em></strong>ead</li>
 <br>
-<strong>U</strong>pdate
+<li><strong><em>U</em></strong>pdate</li>
 <br>
-<strong>D</strong>elete
+<li><strong><em>D</em></strong>elete</li>
+</ol>
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 
