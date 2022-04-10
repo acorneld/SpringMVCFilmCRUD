@@ -38,8 +38,6 @@
 <br>
 <ul>
 <li>Create a new Film in the database with the "Add A Film" Button</li>
-<br>
-<li>![addFilmButton](https://i.imgur.com/CUPbFum.png)</li>
 </ul>
 <br>
 <li><strong><em>R</em></strong>ead</li>
