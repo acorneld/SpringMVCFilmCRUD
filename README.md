@@ -15,7 +15,7 @@
       </ul>
     </li>
   <ul>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#howitworks">How It Works</a></li>
   </ul>  
   <ul>
     <li><a href="#contact">Contact</a></li>
@@ -71,8 +71,20 @@
 
 
 
-## Usage
-
+## How It Works
+<ol>
+<li>
+The MVCFilmSite Dynamic Web App is Run on a Apache Tomahawk v8.5 server and launched through Spring Tool Suite 4
+</li>
+<li>
+Upon Launch we are brought to Home Page reflected in /WEB-INF/home.jsp
+</li>
+<ul>
+<li>
+Find Film By Id navigates to findFilmById.html where the user is prompted for the Id they would like to retrieve from the database.
+</li>
+</ul>
+</ol>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
