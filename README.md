@@ -75,7 +75,8 @@
 
 <strong>Developers on Project</strong>
 <h4>Anthony Butler</h4>
-[LinkedIn](http://www.linkedin.com/in/anthony-tyler-butler)
+<a href="http://www.linkedin.com/in/anthony-tyler-butler">LinkedIn</a>
+
 <ul>
 <li>anthonybutler0824@gmail.com</li>
 <li>Github - anthonybutler0824</li>
