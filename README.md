@@ -85,12 +85,17 @@ Upon Launch we are brought to Home Page reflected in /WEB-INF/home.jsp
         User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at /WEB-INF/home.jsp
         </li>
       </ul>
-  <li>
-  <strong>Add A Film</strong> navigates to <strong>addFilm.html</strong> where the user is prompted to enter the Film's Title, Description, Release Year, Rating, and Length
-  </li>    
   </ol>
 
 </ul>
+<li>
+<strong>Add A Film</strong> navigates to <strong>addFilm.html</strong> where the user is prompted to enter the Film's Title, Description, Release Year, Rating, and Length
+</li>
+  <ul>
+    <li>
+    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided addFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at /WEB-INF/home.jsp
+    </li>
+  </ul>
 </ol>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
