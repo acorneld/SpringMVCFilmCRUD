@@ -194,13 +194,15 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			stmt.setString(1, "%" + string + "%");
 			stmt.setString(2, "%" + string + "%");
 			rs = stmt.executeQuery();
-
+			int count = 0;
 			while (rs.next()) {
 				filmList.add(new Film(rs.getInt("id"), rs.getString("title"), rs.getString("description"),
 						rs.getInt("release_year"), rs.getInt("language_id"), rs.getInt("rental_duration"),
 						rs.getDouble("rental_rate"), rs.getInt("length"), rs.getDouble("replacement_cost"),
 						rs.getString("rating"), rs.getString("special_features")));
+				count++;
 			}
+			System.out.println(count);
 			return filmList;
 
 		} catch (SQLException e) {
