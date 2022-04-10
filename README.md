@@ -36,19 +36,19 @@
 
 1. <strong><em>C</em></strong>reate
 <br>
-* Create a new Film in the database with the "Add A Film" Button
+ Create a new Film in the database with the "Add A Film" Button
 <br>
 2. <strong><em>R</em></strong>ead
 <br>
-* View the current information for a Film in the database
+ View the current information for a Film in the database
 <br>
 3. <strong><em>U</em></strong>pdate
 <br>
-* Update Predefined Fields of a Film in the database
+ Update Predefined Fields of a Film in the database
 <br>
 4. <strong><em>D</em></strong>elete
 <br>
-* Remove Existing Films in the database
+ Remove Existing Films in the database
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 
