@@ -11,13 +11,19 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#technologies-used">Built With</a></li>
+        <li><a href="#technologies-used">Technologies Used</a></li>
       </ul>
     </li>
-
+  <ul>
     <li><a href="#usage">Usage</a></li>
+  </ul>  
+  <ul>
     <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <ul>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    </ul>
   </ol>
 </details>
 
@@ -67,9 +73,20 @@
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/acorneld) - acorneld@gmail.com
+Developers on Project -
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/acorneld/SpringMVCFilmCRUD)
+[Anthony Butler](http://www.linkedin.com/in/anthony-tyler-butler) - anthonybutler0824@gmail.com
+Github - anthonybutler0824
+
+[Cecelia Guerrero](https://www.linkedin.com/in/cecelia-guerrero/) -
+Github - cagugu
+guerrero.a.cecelia@gmail.com
+
+[Andrew Cornelius](https://www.linkedin.com/in/andrew-cornelius-584b151a9) -
+Github - acorneld
+acorneld@gmail.com
+
+Project Link: [https://github.com/acorneld/SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
