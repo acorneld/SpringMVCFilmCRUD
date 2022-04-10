@@ -34,17 +34,19 @@
 
 <p>SpringMVCFilmCRUD is a Dynamic Web Application that allows the user to perform the following operations on a Film in the SD MYSQL Film Database.</p>
 
-* <strong><em>C</em></strong>reate
+1. <strong><em>C</em></strong>reate
 <br>
-  * Create a new Film in the database with the "Add A Film" Button
-
+* Create a new Film in the database with the "Add A Film" Button
 <br>
-<strong><em>R</em></strong>ead
+2. <strong><em>R</em></strong>ead
+* View the current information for a Film in the database
 <br>
-<strong><em>U</em></strong>pdate
+3. <strong><em>U</em></strong>pdate
 <br>
-<strong><em>D</em></strong>elete
-
+* Update Predefined Fields of a Film in the database
+<br>
+4. <strong><em>D</em></strong>elete
+* Remove Existing Films in the database
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 
