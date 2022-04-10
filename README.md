@@ -63,26 +63,26 @@
 The MVCFilmSite Dynamic Web App is Run on a Apache Tomahawk v8.5 server and launched through Spring Tool Suite 4
 </li>
 <li>
-Upon Launch we are brought to Home Page reflected in /WEB-INF/home.jsp
+Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</strong>
 </li>
 <li>
 <strong>Find Film By Id</strong> navigates to <strong>findFilmById.html</strong> where the user is prompted for the Film Id they would like to retrieve from the database.
 </li>
 <ul>
-<li>All information for the requested Film is then retrieved by way of the SpringMVC provided getFilmData.do RequestMapping found in the FilmController.java
+<li>All information for the requested Film is then retrieved by way of the SpringMVC provided <strong>getFilmData.do</strong> RequestMapping found in the <strong>FilmController.java</strong>
 </li>
 <li>User is then prompted with Two options for the displayed Film</li>
   <ol>
     <li>Delete Film</li>
       <ul>
-        <li>The selected film is removed from the database by way of the SpringMVC provided deleteFilm.do RequestMapping found in the FilmController.java and user is returned to the aforementioned homepage at /WEB-INF/home.jsp</li>
+        <li>The selected film is removed from the database by way of the SpringMVC provided <strong>deleteFilm.do</strong> RequestMapping found in the FilmController.java and user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong></li>
       </ul>
     <li>Update Film</li>
       <ul>
         <li>
-        The selected film is displayed for editing through updateFilm.html with the current values shown</li>
+        The selected film is displayed for editing through <strong>updateFilm.html</strong> with the current values shown</li>
         <li>
-        User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at /WEB-INF/home.jsp
+        User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
         </li>
       </ul>
   </ol>
@@ -93,7 +93,7 @@ Upon Launch we are brought to Home Page reflected in /WEB-INF/home.jsp
 </li>
   <ul>
     <li>
-    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided addFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at /WEB-INF/home.jsp
+    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided addFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
   </ul>
 </ol>
@@ -135,11 +135,11 @@ Project Link: [SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
 
 ## Acknowledgments
 
--   [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
--   [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
--   [Malven's Grid Cheatsheet](https://grid.malven.co/)
--   [GitHub Pages](https://pages.github.com)
--   [Font Awesome](https://fontawesome.com)
--   [React Icons](https://react-icons.github.io/react-icons/search)
+-   [Film Query App Foundation](https://github.com/anthonyb0824/FilmQueryProject)
+-   [Film Query App Reference #1](https://github.com/Cagugu/FilmQueryProject)
+-   [Film Query App Reference #2](https://github.com/acorneld/FilmQueryProject)
+-   [Stack Overflow](https://stackoverflow.com/)
+-   [W3 Schools](https://www.w3schools.com/)
+-   [othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
