@@ -6,7 +6,7 @@
 
 <details>
   <summary>Table of Contents</summary>
-  <ol>
+
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -23,7 +23,7 @@
   <ul>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     </ul>
-  </ol>
+
 </details>
 
 <!-- ABOUT THE PROJECT -->
@@ -108,7 +108,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 
 <ul>
 <li><a href="http://www.linkedin.com/in/anthony-tyler-butler">LinkedIn</a></li>
-<li><a href="anthonybutler0824@gmail.com">E-mail</a></li>
+<li><a href="mailto:anthonybutler0824@gmail.com">E-mail</a></li>
 <li><a href="https://github.com/anthonyb0824">Github</a></li>
 </ul>
 
@@ -116,14 +116,14 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 
 <ul>
 <li><a href="https://www.linkedin.com/in/cecelia-guerrero/">LinkedIn</a></li>
-<li><a href="guerrero.a.cecelia@gmail.com"</a>E-mail</li>
+<li><a href="mailto:guerrero.a.cecelia@gmail.com"</a>E-mail</li>
 <li><a href="https://github.com/Cagugu">Github</a></li>
 </ul>
 
 <h4>Andrew Cornelius</h4>
 <ul>
 <li><a href="https://www.linkedin.com/in/andrew-cornelius-584b151a9">LinkedIn</a></li>
-<li><a href="acorneld@gmail.com">E-mail</a></li>
+<li><a href="mailto:acorneld@gmail.com">E-mail</a></li>
 <li><a href="https://github.com/acorneld">Github</a></li>
 </ul>
 
@@ -140,6 +140,6 @@ Project Link: [SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
 -   [Film Query App Reference #2](https://github.com/acorneld/FilmQueryProject)
 -   [Stack Overflow](https://stackoverflow.com/)
 -   [W3 Schools](https://www.w3schools.com/)
--   [othneildrew](https://github.com/othneildrew/Best-README-Template)
+-   [Github - othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
