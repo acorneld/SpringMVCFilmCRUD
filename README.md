@@ -75,9 +75,16 @@ Upon Launch we are brought to Home Page reflected in /WEB-INF/home.jsp
   <ol>
     <li>Delete Film</li>
       <ul>
-        <li>The select film is removed from the database by way of the SpringMVC provided deleteFilm.do RequestMapping found in the FilmController.java</li>
+        <li>The selected film is removed from the database by way of the SpringMVC provided deleteFilm.do RequestMapping found in the FilmController.java and user is returned to the aforementioned homepage at /WEB-INF/home.jsp</li>
       </ul>
     <li>Update Film</li>
+      <ul>
+        <li>
+        The selected film is displayed for editing through updateFilm.html with the current values shown</li>
+        <li>
+        User can then change all given fields to their preferred input and apply them to the database by way of the SpringMVC provided updateFilm.do RequestMapping found in the FilmController.java
+        </li>
+      </ul>
   </ol>
 
 </ul>
