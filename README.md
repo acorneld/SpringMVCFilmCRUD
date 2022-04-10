@@ -69,8 +69,16 @@ Upon Launch we are brought to Home Page reflected in /WEB-INF/home.jsp
 <strong>Find Film By Id</strong> navigates to <strong>findFilmById.html</strong> where the user is prompted for the Film Id they would like to retrieve from the database.
 </li>
 <ul>
-<li>All information for the requested Film is then retrieved by way of the SpringMVC provided getFilmData.do RequestMapping provided in the FilmController.java
+<li>All information for the requested Film is then retrieved by way of the SpringMVC provided getFilmData.do RequestMapping found in the FilmController.java
 </li>
+<li>User is then prompted with Two options for the displayed Film</li>
+  <ol>
+    <li>Delete Film</li>
+      <ul>
+        <li>The select film is removed from the database by way of the SpringMVC provided deleteFilm.do RequestMapping found in the FilmController.java</li>
+      </ul>
+    <li>Update Film</li>
+  </ol>
 
 </ul>
 </ol>
