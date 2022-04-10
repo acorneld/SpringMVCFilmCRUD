@@ -75,28 +75,29 @@
 
 <strong>Developers on Project</strong>
 <h4>Anthony Butler</h4>
-<a href="http://www.linkedin.com/in/anthony-tyler-butler">LinkedIn</a>
 
 <ul>
-<li>anthonybutler0824@gmail.com</li>
-<li>Github - anthonybutler0824</li>
+<li><a href="http://www.linkedin.com/in/anthony-tyler-butler">LinkedIn</a></li>
+<li><a href="anthonybutler0824@gmail.com">E-mail</a></li>
+<li><a href="https://github.com/anthonyb0824">Github</a></li>
 </ul>
 
 <h4>Cecelia Guerrero</h4>
-[LinkedIn](https://www.linkedin.com/in/cecelia-guerrero/)
+
 <ul>
-<li>Github - cagugu</li>
-<li>guerrero.a.cecelia@gmail.com</li>
+<li><a href="https://www.linkedin.com/in/cecelia-guerrero/">LinkedIn</a></li>
+<li><a href="guerrero.a.cecelia@gmail.com"</a>E-mail</li>
+<li><a href="https://github.com/Cagugu">Github</a></li>
 </ul>
 
 <h4>Andrew Cornelius</h4>
-[Andrew Cornelius](https://www.linkedin.com/in/andrew-cornelius-584b151a9) -
 <ul>
-<li>Github - acorneld</li>
-<li>acorneld@gmail.com</li>
+<li><a href="https://www.linkedin.com/in/andrew-cornelius-584b151a9">LinkedIn</a></li>
+<li><a href="acorneld@gmail.com">E-mail</a></li>
+<li><a href="https://github.com/acorneld">Github</a></li>
 </ul>
 
-Project Link: [https://github.com/acorneld/SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
+Project Link: [SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
