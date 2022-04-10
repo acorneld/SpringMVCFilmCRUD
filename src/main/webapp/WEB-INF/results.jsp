@@ -29,10 +29,22 @@
 					<li>${film.description}</li>
 					<li>${film.rating}</li>
 <!--  logic to decide if actor list will be displayed-->
-					<li>${film.actorList}</li>
-
+					<c:choose>
+					<c:when test="${ film.actorList.isEmpty()}">
+					<li>No Actor List for your selected film.</li>
+					</c:when>
+					<c:otherwise><li>${film.actorList}</li></c:otherwise>				  
+					</c:choose>
+					
+					<c:choose>
+					<c:when test="${! empty film.category}">
 					<li>${film.category}</li>
+					</c:when>
+					<c:otherwise><li>No category listed for selected film.</li></c:otherwise>				  
+					</c:choose>
+					
 					<li>${film.language}</li>
+					
 				</ul>
 
 				<br>

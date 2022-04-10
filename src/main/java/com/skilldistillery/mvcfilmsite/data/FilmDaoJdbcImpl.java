@@ -187,6 +187,7 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 	@Override
 	public List<Film> findFilmsByKeyword(String string) {
 		try {
+			Film film = null;
 			List<Film> filmList = new ArrayList<Film>();
 			String sqltext = "SELECT * From film WHERE description LIKE ? or title LIKE ?";
 			conn = DriverManager.getConnection(URL, user, pass);
@@ -196,10 +197,23 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			rs = stmt.executeQuery();
 			int count = 0;
 			while (rs.next()) {
-				filmList.add(new Film(rs.getInt("id"), rs.getString("title"), rs.getString("description"),
-						rs.getInt("release_year"), rs.getInt("language_id"), rs.getInt("rental_duration"),
-						rs.getDouble("rental_rate"), rs.getInt("length"), rs.getDouble("replacement_cost"),
-						rs.getString("rating"), rs.getString("special_features")));
+				film = new Film();
+				film.setId(rs.getInt("f.id"));
+				film.setTitle(rs.getString("f.title"));
+				film.setDescription(rs.getString("f.description"));
+				film.setReleaseYear(rs.getInt("f.release_year"));
+				film.setLanguageId(rs.getInt("f.language_id"));
+				film.setRentalDuration(rs.getInt("f.rental_duration"));
+				film.setRentalRate(rs.getInt("f.rental_rate"));
+				film.setLength(rs.getInt("f.length"));
+				film.setReplacementCost(rs.getDouble("f.replacement_cost"));
+				film.setRating(rs.getString("f.rating"));
+				film.setSpecialFeatures(rs.getString("f.special_features"));
+				film.setActorList(findActorsByFilmId(film.getId()));
+				film.setLanguage(findLanguageByLanguageId(film.getId()));
+				film.setCategory(findCategoryByFilmId(film.getId()));
+				filmList.add(film);
+				
 				count++;
 			}
 			System.out.println(count);
@@ -237,7 +251,7 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			if (rs.next()) {
 				category = rs.getString("name");
 			} else {
-				category = "idk";
+				category = "No category listed for selected film.";
 			}
 
 			return category;
