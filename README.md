@@ -74,19 +74,26 @@
 ## Contact
 
 <strong>Developers on Project</strong>
+<h4>Anthony Butler</h4>
+[LinkedIn](http://www.linkedin.com/in/anthony-tyler-butler)
 <ul>
-<li>[LinkedIn](http://www.linkedin.com/in/anthony-tyler-butler)</li>
 <li>anthonybutler0824@gmail.com</li>
 <li>Github - anthonybutler0824</li>
 </ul>
 
-[Cecelia Guerrero - LinkedIn](https://www.linkedin.com/in/cecelia-guerrero/) -
-Github - cagugu
-guerrero.a.cecelia@gmail.com
+<h4>Cecelia Guerrero</h4>
+[LinkedIn](https://www.linkedin.com/in/cecelia-guerrero/)
+<ul>
+<li>Github - cagugu</li>
+<li>guerrero.a.cecelia@gmail.com</li>
+</ul>
 
+<h4>Andrew Cornelius</h4>
 [Andrew Cornelius](https://www.linkedin.com/in/andrew-cornelius-584b151a9) -
-Github - acorneld
-acorneld@gmail.com
+<ul>
+<li>Github - acorneld</li>
+<li>acorneld@gmail.com</li>
+</ul>
 
 Project Link: [https://github.com/acorneld/SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
 
