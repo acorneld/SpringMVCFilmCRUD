@@ -68,10 +68,10 @@
 						<ul>
 							<li>${film.id}</li>
 							<li>${film.title}</li>
+						<li>${film.category}</li>
 							<%-- <li>${film.description}</li>
 					<li>${film.rating}</li>
 					<li>${film.actorList}</li>
-					<li>${film.category}</li>
 					<li>${film.language}</li> --%>
 						</ul>
 

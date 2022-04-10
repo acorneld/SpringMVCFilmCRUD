@@ -194,24 +194,25 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			stmt = conn.prepareStatement(sqltext);
 			stmt.setString(1, "%" + string + "%");
 			stmt.setString(2, "%" + string + "%");
-			rs = stmt.executeQuery();
+			ResultSet rs = stmt.executeQuery();
 			int count = 0;
+			int id = 0;
 			while (rs.next()) {
 				film = new Film();
-				film.setId(rs.getInt("f.id"));
-				film.setTitle(rs.getString("f.title"));
-				film.setDescription(rs.getString("f.description"));
-				film.setReleaseYear(rs.getInt("f.release_year"));
-				film.setLanguageId(rs.getInt("f.language_id"));
-				film.setRentalDuration(rs.getInt("f.rental_duration"));
-				film.setRentalRate(rs.getInt("f.rental_rate"));
-				film.setLength(rs.getInt("f.length"));
-				film.setReplacementCost(rs.getDouble("f.replacement_cost"));
-				film.setRating(rs.getString("f.rating"));
-				film.setSpecialFeatures(rs.getString("f.special_features"));
-				film.setActorList(findActorsByFilmId(film.getId()));
-				film.setLanguage(findLanguageByLanguageId(film.getId()));
-				film.setCategory(findCategoryByFilmId(film.getId()));
+				film.setId(id = rs.getInt("id"));
+				film.setTitle(rs.getString("title"));
+				film.setDescription(rs.getString("description"));
+				film.setReleaseYear(rs.getInt("release_year"));
+				film.setLanguageId(rs.getInt("language_id"));
+				film.setRentalDuration(rs.getInt("rental_duration"));
+				film.setRentalRate(rs.getInt("rental_rate"));
+				film.setLength(rs.getInt("length"));
+				film.setReplacementCost(rs.getDouble("replacement_cost"));
+				film.setRating(rs.getString("rating"));
+				film.setSpecialFeatures(rs.getString("special_features"));
+				film.setActorList(findActorsByFilmId(id));
+				film.setLanguage(findLanguageByLanguageId(id));
+				film.setCategory(findCategoryByFilmId(id));
 				filmList.add(film);
 				
 				count++;
@@ -225,7 +226,7 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			try {
 				if (rs != null) {
 					rs.close();
-				} // Not needed, stmt.close() will close it; but good practice
+				}
 				if (stmt != null) {
 					stmt.close();
 				}
@@ -249,6 +250,7 @@ public class FilmDaoJdbcImpl implements FilmDAO {
 			rs = stmt.executeQuery();
 
 			if (rs.next()) {
+				System.out.println("here");
 				category = rs.getString("name");
 			} else {
 				category = "No category listed for selected film.";
