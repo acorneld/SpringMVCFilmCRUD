@@ -93,7 +93,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 </li>
   <ul>
     <li>
-    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided addFilm.do RequestMapping found in the FilmController.java and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+    When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
   </ul>
 </ol>
@@ -108,23 +108,23 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 
 <ul>
 <li><a href="http://www.linkedin.com/in/anthony-tyler-butler">LinkedIn</a></li>
-<li><a href="mailto:anthonybutler0824@gmail.com">E-mail</a></li>
 <li><a href="https://github.com/anthonyb0824">Github</a></li>
+<li> E-mail: anthonybutler0824@gmail.com</li>
 </ul>
 
 <h4>Cecelia Guerrero</h4>
 
 <ul>
 <li><a href="https://www.linkedin.com/in/cecelia-guerrero/">LinkedIn</a></li>
-<li><a href="mailto:guerrero.a.cecelia@gmail.com"</a>E-mail</li>
 <li><a href="https://github.com/Cagugu">Github</a></li>
+<li> E-mail: guerrero.a.cecelia@gmail.com"</li>
 </ul>
 
 <h4>Andrew Cornelius</h4>
 <ul>
 <li><a href="https://www.linkedin.com/in/andrew-cornelius-584b151a9">LinkedIn</a></li>
-<li><a href="mailto:acorneld@gmail.com">E-mail</a></li>
 <li><a href="https://github.com/acorneld">Github</a></li>
+<li> E-mail: acorneld@gmail.com</li>
 </ul>
 
 Project Link: [SpringMVCFilmCRUD](https://github.com/acorneld/SpringMVCFilmCRUD)
