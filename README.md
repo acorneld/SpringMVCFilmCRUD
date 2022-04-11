@@ -97,6 +97,11 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
     When user selects the Submit button all inputed fields are added to the database by way of the SpringMVC provided <strong>addFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
     </li>
   </ul>
+<li><strong>Search Film by Keyword/Pattern</strong> navigates to <strong>findFilmByKeyword.html</strong> where the user is displayed Films matching the inputed Keyword/Pattern.</li>
+  <ul>
+    <li> The user is then presented with the option of Updating or Deleting any of the displayed Films.  Update Film! will remove the Film from the database by way of the SpringMVC provided <strong>deleteFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then the user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+    </li>
+  </ul>
 </ol>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
