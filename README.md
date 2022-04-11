@@ -99,7 +99,11 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
   </ul>
 <li><strong>Search Film by Keyword/Pattern</strong> navigates to <strong>findFilmByKeyword.html</strong> where the user is displayed Films matching the inputed Keyword/Pattern.</li>
   <ul>
-    <li> The user is then presented with the option of Updating or Deleting any of the displayed Films.  Update Film! will remove the Film from the database by way of the SpringMVC provided <strong>deleteFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then the user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+    <li> The user is then presented with the option of Updating or Deleting any of the displayed Films.  Update Film! will remove the Film from the database by way of the SpringMVC provided <strong>updateFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then the user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+    </li>
+    <li> Delete Film! will remove the Film from the database by way of the SpringMVC provided <strong>deleteFilm.do</strong> RequestMapping found in the <strong>FilmController.java</strong> and then the user is returned to the aforementioned homepage at <strong>/WEB-INF/home.jsp</strong>
+    </li>
+    <li> Update Film! will carry the user through the previously explained update sequence.
     </li>
   </ul>
 </ol>
@@ -123,7 +127,7 @@ Upon Launch we are brought to Home Page reflected in <strong>/WEB-INF/home.jsp</
 <ul>
 <li><a href="https://www.linkedin.com/in/cecelia-guerrero/">LinkedIn</a></li>
 <li><a href="https://github.com/Cagugu">Github</a></li>
-<li> E-mail: guerrero.a.cecelia@gmail.com"</li>
+<li> E-mail: guerrero.a.cecelia@gmail.com</li>
 </ul>
 
 <h4>Andrew Cornelius</h4>
