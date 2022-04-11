@@ -21,7 +21,6 @@
 					<li>${film.title}</li>
 					<li>${film.description}</li>
 					<li>${film.rating}</li>
-					<li>${film.category}</li> 
 					<li>${film.language}</li>
 				</ul>
 				<form action="deleteFilm.do" method="POST">	
