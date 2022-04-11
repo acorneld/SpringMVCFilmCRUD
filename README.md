@@ -6,9 +6,10 @@
 
 <details>
   <summary>Table of Contents</summary>
-
+  <ul>
     <li>
       <a href="#about-the-project">About The Project</a>
+  </ul>
       <ul>
         <li><a href="#technologies-used">Technologies Used</a></li>
       </ul>
